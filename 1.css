@@ -1,0 +1,184 @@
+*{margin: 0; padding: 0;} 
+
+#navbar1 {
+	position: relative;
+}
+
+#navbar1 .right-menu {
+	position: absolute;
+	right: 0;
+}
+.top {
+	width: 100%;
+	height: 700px;
+	background-image: url(images/1.jpg);
+	background-attachment: fixed;
+}
+
+.banner {
+	color: white;
+}
+.navbar {
+	background-color: transparent !important;
+}
+
+a.logo {
+	font-family: 'Roboto Slab', serif;
+	font-size: 18px;
+	background-color: #EC6952;
+	padding: 14px 30px;
+	border-radius: 0 0 5px 5px;
+	position: relative;
+	top: -8px;
+	font-size: 20px;
+	font-weight: 700;
+}
+.right-menu li {
+	padding: 5px 16px;
+}
+.right-menu li a {
+	text-transform: uppercase;
+	font-size: 12px;
+	color: white;
+}
+.navbar-dark .navbar-nav .nav-link {
+	color: white;
+	font-weight: bold;
+	transition: 0.4s;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: #EC6952;
+}
+.navbar-dark .navbar-nav .active .nav-link {
+	color: #EC6952;
+}
+.navbar-dark .navbar-nav .nav-link.btn:hover {
+	color: white;
+}
+.right-menu .dropdown .dropdown-menu{
+	background-color: #253340;
+}
+.right-menu .dropdown .dropdown-menu::before{
+	content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #253340;
+    position: absolute;
+    right: 30px;
+    top: -10px;
+}
+.right-menu .dropdown:hover .dropdown-menu{
+	display: block;	
+}
+.right-menu .dropdown:hover .dropdown-menu a{
+	transition: 0.4s;
+}
+
+.banner {
+	height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: -100px;
+}
+
+@media (max-width: 576px) {
+	.navbar .navbar-collapse {
+		display: block;
+		text-align: center;
+		z-index: 1;
+	}
+	
+	.navbar .navbar-collapse.show ul.right-menu{
+		display: block;
+		width: 100%;
+		background-color: #253340;
+		text-align: left;
+	}
+	.right-menu {
+		display: none;
+	}
+	.navbar .container {
+		position: relative;
+	}
+	button.navbar-toggler {
+		position: absolute;
+		right: 0;
+		top: 0px;
+		border: none;
+		z-index: 2;
+	}
+	.banner {
+    	margin-top: -75px;
+	}
+}
+
+/*content*/
+
+.nds1 .td {
+	display: block;
+}
+
+.slide {
+	width: 100%;
+	background-color: #F5F5F5;
+	padding: 20px;
+}
+
+.carousel-indicators li {
+	background-color: black;
+}
+
+.carousel-indicators li.active {
+	background-color: #EC6952;
+}
+
+.carousel-indicators {
+	bottom: -10px;
+}
+
+.carousel-control-prev {
+	left: -100px;
+}
+.carousel-control-next {
+	right: -100px;
+}
+
+a.logo.chucam {
+	background-color: white;
+	color: #EC6952;
+}
+.nutlen {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	display: none;
+}
+.nutlen a i{
+	background: grey;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+}
+.nutlen.show {
+	display: inline;
+}
+
+.navbar.down {
+	background-color: white !important;
+}
+
+.navbar.down .right-menu li a {
+	color: black;
+}
+
+.navbar.down .right-menu .dropdown .dropdown-menu a{
+	color: white;
+}
+
+.navbar.down .logo{
+	background-color: white;
+	color: #EC6952;
+}
